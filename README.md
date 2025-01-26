@@ -5,7 +5,7 @@
 </p>
 
 <!-- Title -->
-<h1 align="center"><b>CS114.P11 - MÁY HỌC</b></h1>
+<h1 align="center"><b>CS336.P12 - TRUY VẤN THÔNG TIN ĐA PHƯƠNG TIỆN</b></h1>
 
 
 
