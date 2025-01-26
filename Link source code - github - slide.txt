@@ -1,0 +1,40 @@
+Link slide báo cáo: https://www.canva.com/design/DAGa1JxK8jA/Z_p2ZETsHlGPahlJxkmmkg/edit?utm_content=DAGa1JxK8jA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
+Link github: https://github.com/NguyenVenToan/CS336
+
+Cấu trúc cây thư mục đầy đủ:
+CS336
+├── Localhost
+│   ├── app_local.py
+│   ├── image_embeddings.npy
+│   ├── image_embeddings_align.npy
+│   ├── image_filenames.npy
+│   ├── requirement.txt
+│   ├── text_embeddings.npy
+│   ├── text_embeddings_align.npy
+│   └── images
+├── Kaggle
+│   ├── Align.ipynb
+│   └── CLIP.ipynb
+
+Do giới hạn upload file của github là 25MB mà các file embedding và thư mục images trong thư mục Localhost lại có dung lượng lớn hơn nên nhóm em đã upload 5 file trừ file .py và file .txt và thư mục images chứa ảnh lên Hugging Face.
+
+Link Hugging Face:
+Với Embeddings: https://huggingface.co/datasets/Lippovn04/Embeddings
+Với ảnh: https://huggingface.co/datasets/Lippovn04/images 
+
+Cách sử dụng:
+Với các file thư mục Kaggle :
+B1: Đăng nhập tài khoản Kaggle.
+B2: Tạo notebook mới rồi import file .ipynb muốn sử dụng.
+B3: Kiểm tra dataset có đủ không. Phải đủ hình sau:
+
+Nếu chưa đủ thì chọn “Add Input”, chọn “Dataset”, sau đó nhập từ khóa:
+Với ảnh thì nhập từ khóa “Flickr30k-dataset”  (được upload bởi Toàn Nguyễn) sau đó nhấn dấu + để thêm input.
+Với embedding thì nhập từ khóa “Embedding_clip_vitbert_align”  (được upload bởi Toàn Nguyễn) sau đó nhấn dấu + để thêm input.
+B4: Nhấn để chạy code . 
+
+Với Localhost:
+B1: Tải file app_local.py từ github về, tải thư mục ảnh và embedding từ Hugging Face về và giải nén sau đó sắp xếp như cây thư mục bên trên.
+B2: Tải các thư viện cần thiết có trong file requirements.txt.
+B3: Mở folder chứa code và dữ liệu cần thiết trên Visual Studio Code(File -> Open Folder. Ở đây như cây thư mục trên thì chọn Localhost) sau đó chọn “Terminal” -> “New Terminal”  sau đó nhập vào terminal “streamlit run app_local.py”.
